@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -26,7 +26,7 @@
 		24DD6CFA1134B3F500162E58 /* TiAnimationModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* TiAnimationModule.m */; };
 		24DE9E1111C5FE74003F90F6 /* TiAnimationModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* TiAnimationModuleAssets.h */; };
 		24DE9E1211C5FE74003F90F6 /* TiAnimationModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* TiAnimationModuleAssets.m */; };
-		3AB3D37B21BE459A0060E89D /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB3D37A21BE459A0060E89D /* Lottie.framework */; };
+		26A85E5A25B2001400BF1DDC /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A85E5925B2001400BF1DDC /* Lottie.framework */; platformFilter = ios; };
 		3AB3D38021BE475F0060E89D /* TiAnimationAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB3D37C21BE475F0060E89D /* TiAnimationAnimationView.h */; };
 		3AB3D38121BE475F0060E89D /* TiAnimationAnimationViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB3D37D21BE475F0060E89D /* TiAnimationAnimationViewProxy.m */; };
 		3AB3D38221BE475F0060E89D /* TiAnimationAnimationViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB3D37E21BE475F0060E89D /* TiAnimationAnimationViewProxy.h */; };
@@ -52,7 +52,7 @@
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
 		24DE9E0F11C5FE74003F90F6 /* TiAnimationModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiAnimationModuleAssets.h; path = Classes/TiAnimationModuleAssets.h; sourceTree = "<group>"; };
 		24DE9E1011C5FE74003F90F6 /* TiAnimationModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiAnimationModuleAssets.m; path = Classes/TiAnimationModuleAssets.m; sourceTree = "<group>"; };
-		3AB3D37A21BE459A0060E89D /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = platform/Lottie.framework; sourceTree = "<group>"; };
+		26A85E5925B2001400BF1DDC /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/Lottie-cdpprpeskcoqtxervmmmxcldhpix/Build/Products/Debug-iphoneos/Lottie.framework"; sourceTree = "<group>"; };
 		3AB3D37C21BE475F0060E89D /* TiAnimationAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiAnimationAnimationView.h; path = Classes/TiAnimationAnimationView.h; sourceTree = "<group>"; };
 		3AB3D37D21BE475F0060E89D /* TiAnimationAnimationViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiAnimationAnimationViewProxy.m; path = Classes/TiAnimationAnimationViewProxy.m; sourceTree = "<group>"; };
 		3AB3D37E21BE475F0060E89D /* TiAnimationAnimationViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiAnimationAnimationViewProxy.h; path = Classes/TiAnimationAnimationViewProxy.h; sourceTree = "<group>"; };
@@ -69,7 +69,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
-				3AB3D37B21BE459A0060E89D /* Lottie.framework in Frameworks */,
+				26A85E5A25B2001400BF1DDC /* Lottie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3AB3D37A21BE459A0060E89D /* Lottie.framework */,
+				26A85E5925B2001400BF1DDC /* Lottie.framework */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -270,7 +270,7 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = (
 					"-DDEBUG",
@@ -283,6 +283,7 @@
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_WORKSPACE = NO;
 			};
 			name = Debug;
 		};
@@ -314,7 +315,7 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
@@ -322,6 +323,7 @@
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_WORKSPACE = NO;
 			};
 			name = Release;
 		};
@@ -438,7 +440,7 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ti.animation;
